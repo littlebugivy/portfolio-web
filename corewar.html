@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en" class="demo-1 no-js">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mengdie Lin</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<script src="js/snap.svg-min.js"></script>
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-86110959-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+</head>
+
+<body>
+	<div class="project-name-container">
+		<figure class="left-arrow">
+			<a href="index.html"><img src="img/left-arrow.svg"></a>
+		</figure>
+		<figure>
+			<img src="img/corewar-logo.png" class="project-img" />
+		</figure>
+		<figcaption>
+			Classic PC Programming Language Game In Mobile Era
+		</figcaption>
+	</div>
+	<div class="project-main-container">
+		<h1> OVERVIEW </h1>
+		<div>
+			<img class="small-icon" src="img/dots.png">
+			<div>Team Work : 5 people</div>
+			<div>Role : Team leader, game designer, front-end developer</div>
+			<div>Applied : User case study, Quick Prototyping, Keynote, Android Studio, Java, XML</div>
+			<img class="small-icon" src="img/dots.png">
+		</div>
+		<div>
+			Core War is a programming game firstly established in 1984 in which two or more battle programs (called "warriors") compete
+			for control of a virtual computer. These battle programs are written in an abstract assembly language called Redcode.
+		</div>
+		<p>
+			At the beginning of a game, each battle program is loaded into memory at a random location, after which each program executes
+			one instruction in turn. The object of the game is to cause the processes of opposing programs to terminate (which happens
+			if they execute an invalid instruction), leaving the victorious program in sole possession of the machine.
+		</p>
+		<p>
+			What we are done is transfer the classic game into the mobile era based on Android Platform.
+		</p>
+
+		<div class="video-caption">
+			<svg width="12" height="12">
+				<polygon points="0,0 12,0 6,12" style="fill:black;" />
+			</svg>
+			PC version - Classic Game
+		</div>
+		<video controls>
+			<source src="video/original.m4v" type="video/mp4" />
+		</video>
+
+
+		<div class="video-caption">
+			<svg width="12" height="12">
+				<polygon points="0,0 12,0 6,12" style="fill:black;" />
+			</svg>
+			Mobile Version - What we have done (One Player Mode Showed)
+		</div>
+		<video controls>
+			<source src="video/self_play.mp4" type="video/mp4" />
+		</video>
+
+		<h1>PROCESS</h1>
+		<div class="process-container">
+			<svg height="230px " width="30px ">
+				<circle cx="15 " cy="15 " r="14 " style="stroke:black;stroke-width:2 " fill="white" />
+				<circle cx="15 " cy="15 " r="10 " style="stroke:black;stroke-width:2 " fill="white" />
+				<line x1="15 " y1="30 " x2="15 " y2="230 " style="stroke:black;stroke-width:2 " />
+			</svg>
+		</div>
+
+		<h3>Game and Past Designs Study</h3>
+		<p>
+			As there are currently no mobile adaptations of the game on either the two of the most popular Android or iOS platforms,
+			and as a result we had no basis to go on for our game. Considering abundant settings as well as functions in the classic
+			PC version will cause confusion to starters, we decided to simplify the whole version game and keeping the functions which
+			are esstential. To get a better understanding of the game and decide on the parts which should be remained, we studied
+			the previous software and tried them out.
+		</p>
+		<figure>
+			<img src="img/corewin.png" class="previous-sof-img" />
+			<img src="img/pmars.jpg" class="previous-sof-img" />
+		</figure>
+		<figcaption class="center">
+			Selected previous versons: <a href="http://corewar.co.uk/wendell/">Core Win(Left)</a> and <a href="http://www.koth.org/pmars/">PMars(Right)</a>
+		</figcaption>
+
+		<div class="process-container ">
+			<svg height="230px " width="30px ">
+				<circle cx="15 " cy="15 " r="14 " style="stroke:black;stroke-width:2 " fill="white" />
+				<circle cx="15 " cy="15 " r="10 " style="stroke:black;stroke-width:2 " fill="white" />
+				<line x1="15 " y1="30 " x2="15 " y2="230 " style="stroke:black;stroke-width:2 " />
+			</svg>
+		</div>
+		<h3>User Study and Our Solutions</h3>
+		<p>We designed several user cases and picked three as our target user: </p>
+		<table>
+			<tr>
+				<th>
+					User Stories
+				</th>
+				<th>
+					Our Solutions
+				</th>
+			</tr>
+			<tr>
+				<td class="user-stories">
+					As a novice programmer, I want a game that gives me a basic taste of low level programming but without too much difficulty.
+				</td>
+				<td class="solution">
+					<p>
+						- Offer default warrior template to be chosen from as well as the code of them for in-experience player to play and learn.
+						<img class="solutions" src="img/warriorInfo.jpg">
+					</p>
+					<p>
+						- Be able to create and edit code for their own warriors with the assistant template.
+						<img class="solutions" src="img/editing.png">
+					</p>
+					<p>
+						- Offer relative guides and links to help users quickly get into the game.
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td class="user-stories">
+					As a casual gamer, I want a game that is well-designed, full of fun and will help kill spare time
+				</td>
+				<td class="solution">
+					<p>
+						- Design the game which is easy to access and playful.
+						<img class="solutions" src="img/warrior_gallery.png">
+					</p>
+					<p>
+						- Have multiple modes to choose, allow battles with friends.
+						<img class="solutions" src="img/mode.png">
+					</p>
+					<p>
+						- Game scores are reported every time.
+					</p>
+				</td>
+			</tr>
+
+
+			<tr>
+				<td class="user-stories">
+					As a player today, I would like to switch devices with my DIY warriors.
+				</td>
+				<td class="solution">
+					<p>
+						- Allow players to create account for the game with usernames and passwords to store and manage their own warriors.
+						<img class="solutions" src="img/warrior_slot.png">
+					</p>
+				</td>
+			</tr>
+		</table>
+
+		<div class="process-container ">
+			<svg height="230px " width="30px ">
+				<circle cx="15 " cy="15 " r="14 " style="stroke:black;stroke-width:2 " fill="white" />
+				<circle cx="15 " cy="15 " r="10 " style="stroke:black;stroke-width:2 " fill="white" />
+				<line x1="15 " y1="30 " x2="15 " y2="230 " style="stroke:black;stroke-width:2 " />
+			</svg>
+		</div>
+		<h3>Low-fi and High-fi prototyping</h3>
+		<p>
+			The main features of the game was firstly determinated based on the suggestions from experienced corewar players as well
+			as our opinions as targeting novices considering the all user cases above. Soon later three versions of the prototyps
+			are built and evolved frequently according to the feedback from users.
+		</p>
+		<figure>
+			<img class="prototype1" src="img/prototype1.png">
+			<img class="prototype1" src="img/prototype2.png">
+			<img class="solutions" src="img/prototype3.png">
+		</figure>
+		<div class="process-container ">
+			<svg height="230px " width="30px ">
+				<circle cx="15 " cy="15 " r="14 " style="stroke:black;stroke-width:2 " fill="white" />
+				<circle cx="15 " cy="15 " r="10 " style="stroke:black;stroke-width:2 " fill="white" />
+				<line x1="15 " y1="30 " x2="15 " y2="230 " style="stroke:black;stroke-width:2 " />
+			</svg>
+		</div>
+		<h3>Game Flow</h3>
+		After rounds of user testing, we improved the user interface and adjusted the features and added new functions to meet the
+		changing requirements. The final version of work flow is shown below.
+		<img class="work-flow" src="img/app_flow.png">
+		<div class="process-container ">
+			<svg height="230px " width="30px ">
+				<circle cx="15 " cy="15 " r="14 " style="stroke:black;stroke-width:2 " fill="white" />
+				<circle cx="15 " cy="15 " r="10 " style="stroke:black;stroke-width:2 " fill="white" />
+				<line x1="15 " y1="30 " x2="15 " y2="230 " style="stroke:black;stroke-width:2 " />
+			</svg>
+		</div>
+
+
+		<h1>Final Product</h1>
+		<video class="final-video" controls>
+			<source src="video/New.mp4" type="video/mp4" />
+		</video>
+		<div class="process-container ">
+			<svg height="230px " width="30px ">
+				<circle cx="15 " cy="215 " r="14 " style="stroke:black;stroke-width:2 " fill="white" />
+				<circle cx="15 " cy="215 " r="10 " style="stroke:black;stroke-width:2 " fill="white" />
+				<line x1="15 " y1="30 " x2="15 " y2="200 " style="stroke:black;stroke-width:2 " />
+			</svg>
+		</div>
+
+	</div>
+</body>
+
+</html>
